@@ -8,7 +8,7 @@ const BookSeat = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/user/book', {
+      await axios.post('http://localhost:5000/user/book', {
         trainId,
         seatNumber
       }, {
